@@ -1,0 +1,32 @@
+.new_users{width: 1200px;box-sizing: border-box;padding: 0 16px;margin: 30px auto 0px auto;background: #fff;}
+.new_users.under{padding-top: 2px;margin-bottom: -25px;line-height: 54px;}
+.clear{zoom: 1;clear: both;}
+.clear:before,.clear:after{content: "";display: table;}
+.new_users.under .update_time{margin-left: 2px;}
+.new_users .update_time{height: auto;font-family: "微软雅黑","宋体";}
+.fl{float: left;display: inline;}
+.new_users .today{font-size: 20px;color: #333;font-weight: bold;}
+.new_users .today span{font-size: 16px;color: #bbb;margin-left: 10px;margin-right: 10px;font-weight: normal;}
+.new_users .update_desc{float: right;margin-right: 2px;}
+
+.main{width: 1200px;background: #fff;margin: 0 auto;}
+.mt25{margin-top: 25px !important;}
+.goods_list{width: 1200px;padding-left: 14px;box-sizing: border-box;margin: 0px auto 0px;}
+.goods_list li{width: 230px;background: #fff;float: left;margin: 0 6px 12px 0;height: 290px;box-sizing: border-box;padding-top: 6px;border: 1px solid transparent;}
+.goods_list li .list_goods{position: relative;width: 232px;height: auto;z-index: 1;}
+.goods_list li .goods_pic{width: 220px;position: relative;height: 220px;padding-left: 4px;}
+.goods_list li .pic_img{height: 220px;overflow: hidden;text-align: center;width: 220px;display:table-cell;vertical-align: middle;}
+.goods_list li .pic_img img{max-width: 220px;max-height: 220px;}
+.goods_list li .goods_price{width: 220px;height: 32px;line-height: 36px;position: relative;padding: 0 10px 0px 8px;background: #fff;z-index: 10;box-sizing: border-box;float: left;}
+.goods_list li .goods_price .price_current{color: #ff464e;font-size: 18px;font-family: Arial;}
+.goods_list li .goods_price .price_current em{font-size: 18px;font-family: "微软雅黑","verdana";margin-left: -1px;margin-right: -1px;}
+.goods_list li .goods_price .des_other{margin: 2px 0 0 5px;}
+.goods_list li .goods_price .des_other .price_old{color: #bbb;text-decoration: line-through;font-size: 14px;}
+.goods_price .price_current, .goods_list li .goods_price .des_other { display: block;float: left;} 
+.goods_list li .goods_title{width: 220px;height: 18px;line-height: 18px;overflow: hidden;padding:  0 10px 0 10px;position: relative;font-weight: normal;color: #333;box-sizing: border-box;margin-bottom: 12px;letter-spacing: 0;}
+.goods_list li .goods_title a{font-size: 12px; display: inline-block;color: #333;letter-spacing: 1px;max-width: 160px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.goods_list li .goods_title span.sold{font-size: 12px; display: block;color: #bbb;position: absolute;top: 0;right: 6px;background: #fff;height: 18px;text-align: right;}
+
+
+/* 分页 */
+

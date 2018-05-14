@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "style/index.css"/>
+    <link rel="stylesheet" href="style/xinpin.css" />
+     <link rel="stylesheet" href="style/fenye.css" />
+    <script src="libs/jquery-3.3.1.js"></script>
+    
+</head>
+<body>
+    <div id = "header">
+        <div class="midhead">
+            <ul>
+                <li><a href="#">登陆 <span>免费注册</span></a></li>
+                <li><a href ="#">我的订单</a></li>
+                <li><a href="#">商家入驻</a></li>
+                <li class = "shop"><span class="bag_show"></span><a href="#">购物袋</a><em>0</em> </li>
+                <li><a href="#">商家中心</a></li>
+                <li><a href="#">客户服务</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id = "navigation">
+        <div class="area">
+            <div class="logo"></div>
+            <div class="protection"></div>
+           
+            <div class="search">
+                 <span class = "search_s">
+                    <input type="text" placeholder="请输入想找的宝贝">
+                </span>
+               
+                 <input type="submit" class = "search_icon" value="">
+            </div>
+        </div>
+        <div class="mainnav">
+            <div class="nav">
+                <ul class="nav_ul">
+                    <li class="nav_color"><a href= "#" >首页</a></li>
+                    <li><a href="#">品牌折扣</a></li>
+                    <li><a href="#">9.9包邮</a></li>
+                    <li><a href="#">即将上线</a></li>
+                    <li class="new_phone"><a href="#"><em class="phone"></em>手机版</a>
+                        <div class="new_code">
+                            <div class="code_box">
+                                <p class="code"></p>
+                                <p class="txt">随时逛   及时抢</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <div class="wrap_banner">
+            <div class="banner_left">
+                <dl>
+                    <dd><a href= "#"><i class="ct_icon ct_icon_nvzhuang"></i>女装<em class="ct_line"></em></a></dd>
+                    <dd><a href= "#"><i class="ct_icon ct_icon_nanzhuang"></i>男装<em class="ct_line"></em></a></dd>
+                    <dd><a href= "#"><i class="ct_icon ct_icon_xiezi"></i>鞋子<em class="ct_line"></em></a></dd>
+                    <dd><a href= "#"><i class="ct_icon ct_icon_xiangbao"></i>箱包<em class="ct_line"></em></a></dd>
+                    <dd><a href= "#"><i class="ct_icon ct_icon_muying"></i>母婴<em class="ct_line"></em></a></dd>
+                    <dd><a href= "#"><i class="ct_icon ct_icon_meizhuang"></i>美妆<em class="ct_line"></em></a></dd>
+                    <dd><a href= "#"><i class="ct_icon ct_icon_jujia"></i>居家<em class="ct_line"></em></a></dd>
+                    <dd><a href= "#"><i class="ct_icon ct_icon_jiafang"></i>家纺<em class="ct_line"></em></a></dd>
+                    <dd><a href= "#"><i class="ct_icon ct_icon_wenti"></i>文体<em class="ct_line"></em></a></dd>
+                    <dd><a href= "#"><i class="ct_icon ct_icon_meishi"></i>美食<em class="ct_line"></em></a></dd>
+                    <dd><a href= "#"><i class="ct_icon ct_icon_shuma"></i>数码<em class="ct_line"></em></a></dd>
+                    <dd><a href= "#"><i class="ct_icon ct_icon_dianqi"></i>电器<em class="ct_line"></em></a></dd>
+                    <dd class="border_none"><a href= "#"><i class="ct_icon ct_icon_neiyi"></i>内衣<em class="ct_line"></em></a></dd>
+                    <dd class="border_none"><a href= "#"><i class="ct_icon ct_icon_peishi"></i>配饰<em class="ct_line"></em></a></dd>  
+                </dl>
+            </div>
+            <div class="content">
+                <ul class="banner">
+                <li class="active"><a href="#"><img src ="images/banner1.png"></a></li>
+                <li><a href="#"><img src="images/banner2.jpg"></a></li>
+                <li><a href="#"><img src="images/banner3.jpg"></a></li>
+                <li><a href="#"><img src="images/banner4.jpg"></a></li>                  
+                </ul>
+            </div>
+            
+            <div class="banner_right">
+                <dl>
+                    <dd><a href="#"><img src="images/r-1.jpg"></a></dd>
+                    <dd><a href="#"><img src="images/r-2.jpg"></a></dd>
+                    <dd><a href="#"><img src="images/r-3.jpg"></a></dd>
+                    <dd><a href="#"><img src="images/r-4.jpg"></a></dd>    
+                    <dd class="last"><a href="#"><img src="images/r-5.png"></a></dd>            
+                </dl>
+            </div>  
+            <div class="round">
+                <div class="adtap">
+                    <a class="current"></a>
+                    <a></a>
+                    <a></a>
+                    <a></a>
+                </div>
+            </div>     
+            <div class="banner_arrow">
+                <a class="arrow_prev">
+                    <i></i>
+                </a>
+                <a class="arrow_next">
+                    <i></i>
+                </a>
+            </div>   
+        </div>   
+    </div>
+
+<!-- 主体 -->
+
+
+
+<div class="new_users clear under">
+    <div class="update_time fl">
+        <div class="today">
+            今日新品
+            <span>TODAY'S NEW</span>
+        </div>
+    </div>
+    <div class="update_desc">每天10点上新</div>
+</div>
+<div class="main mt25 clear">
+    <ul class="goods_list clear"></ul>    
+    
+    <div class="page">
+        <div>
+            <span class="pg_prev">上一页</span>
+            <span>1</span>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <i>...</i>
+            <a href="#">42</a>
+            <a href="#">43</a>
+            <a href="#" class="pg_next">下一页</a>
+        </div>
+    </div>
+</div>
+    <!-- 页脚 -->
+
+    <div class="foot">
+        <div class="white_bg">
+            <div class="foot_con">
+                <div class="con_box_n">
+                    <div class="app-side-box">
+                        <p class="app-show"></p>
+                        <p class="app-txt" style="text-align:center;font-size: 14px">随时逛 及时抢</p>
+                    </div>
+                    <div class="con_left_info">
+                        <dl class="update">
+                            <dt>获取更新</dt>
+                            <dd><a href="#"><i></i>iPhone/Android</a></dd>
+                            <dd><a href="#"><i></i>卷皮QQ空间</a></dd>
+                            <dd><a href="#"><i></i>卷皮新浪微博</a></dd>
+                            <dd><a href="#"><i></i>开放Api</a></dd>
+                        </dl>
+                        <dl class="cooperation">
+                            <dt>商务合作</dt>
+                            <dd><a href="#"><i></i>卖家免费报名</a></dd>
+                            <dd><a href="#"><i></i>商家入驻</a></dd>
+                            <dd><a href="#"><i></i>廉政邮箱</a></dd>
+                            <dd><a href="#"><i></i>开放平台</a></dd>
+                        </dl>
+                        <dl class="cor_info">
+                            <dt>公司信息</dt>
+                            <dd><a href="#"><i></i>关于卷皮</a></dd>
+                            <dd><a href="#"><i></i>媒体报道</a></dd>
+                        </dl>
+                        <dl class="help_info">
+                            <dt>帮助中心</dt>
+                            <dd><a href="#"><i></i>新手上路</a></dd>
+                            <dd><a href="#"><i></i>网站地图</a></dd>
+                        </dl>
+                    </div>
+                    <div class="con_menu">
+                        <a href="#"></a>
+                        <span class="service_time">
+                            <p>周一至周日</p>
+                            <p>9:00-21:00</p>
+                        </span>
+                    </div>
+                </div>
+                <div class="links">
+                    <span>友情链接</span>
+                    <div class="links_box">
+                        <ul class="links_list">
+                            <li>
+                                <a href="#">九块邮</a>
+                                <a href="#">易迅优惠券</a>
+                                <a href="#">中国鲜花礼品网</a>
+                                <a href="#">钻石小鸟</a>
+                                <a href="#">箱包品牌</a>
+                                <a href="#">网上购物</a>
+                                <a href="#">中国品牌网</a>
+                                <a href="#">会过VIP</a>
+                                <a href="#">家具网</a>
+                                <a href="#">国画</a>
+                            </li>        
+                        </ul>
+                    </div>
+                    <a href="#" class="more">更多</a>
+                </div>
+                <p class="foot_company">
+                     武汉奇米网络科技有限公司 鄂ICP备10209250号 | ICP许可证号：鄂B2-20150109 |鄂公网安备42018502000390号 | 食品流通许可证 SP4201991510041888　　
+                </p>
+                <p class="foot_company" style="padding-top: 5px" >Copyright © 2010 -2018 JuanPi.com All Rights Reserved</p>
+                <div class="logo">
+                    <div class="logo_wrap">
+                        <a href="#"><img src="images/logo1.gif" alt=""></a>
+                        <a href="#"><img src="images/logo2.gif" alt=""></a>
+                        <a href="#"><img src="images/logo3.gif" alt=""></a>
+                        <a href="#"><img src="images/logo4.png" alt=""></a>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="side_right">
+        <div class="side_box">
+            <ul class="side_oper">
+                <li class="normal side_user">
+                    <a href="" class="links">
+                        <i class="normal_icon i_user"></i>
+                    </a>
+                    <div class="tab_login">
+                        <div class="user_box">
+                            <a href="" class="head">
+                                <div class="pic">
+                                    <img src="images/user.jpg" alt="">
+                                </div>
+                            </a>
+                            <p class="txt">
+                                快来
+                                <a href="">登录</a>
+                                吧,么么哒!
+                            </p>
+                        </div>
+                        <i class="close">x</i>
+                        <div class="arr_icon">◆</div>
+                    </div>
+                </li>
+                <li class="normal side_cart">
+                    <a href="" class="links links_cart">
+                        
+                        <i class="normal_icon i_cart"></i>
+                        <em class="num">0</em>
+                    </a>
+                    
+                </li>
+                <li class="normal side_love">
+                    <a href="" class="links">
+                        <i class="normal_icon i_love"></i>
+                    </a>
+                    <div class="tab_tips">
+                        我的收藏
+                         <div class="arr_icon">◆</div>
+                    </div>
+                </li>
+                <li class="normal side_quan">
+                    <a href="" class="links">
+                        <i class="normal_icon i_quan"></i>
+                    </a>
+                    <div class="tab_tips">
+                        我的优惠券
+                         <div class="arr_icon">◆</div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="side_oper other">
+                <li class="normal side_complain">
+                    <a href="#" class="links">
+                        <i class="normal_icon i_complain"></i>
+                    </a>
+                    <div class="tab_tips">
+                        意见反馈
+                         <div class="arr_icon">◆</div>
+                    </div>
+                     
+                </li>
+                <li class="normal side_code">
+                    <a href="#" class="links">
+                        <i class="normal_icon i_code"></i>
+                    </a>
+                    <div class="tab_tips">
+                         <div class="code_box">
+                                <p class="code"></p>
+                                <p class="txt">随时逛   及时抢</p>
+                            </div>
+                         <div class="arr_icon">◆</div>
+                    </div>
+                </li>
+                <li class="normal side_backtop" href="#">
+                    <a class="links">
+                        <i class="normal_icon i_backtop"></i>
+                    </a>
+                     <div class="tab_tips">
+                        返回顶部
+                         <div class="arr_icon">◆</div>
+                    </div>
+                    
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="script/index.js"></script>
+    <script src= "script/jquery.banner.js"></script>
+   <script>
+   $(function () {
+        $(".content")
+            .gpBanner(".banner", {
+                navigation: {
+                    nextEl: '.arrow_next',
+                    prevEl: '.arrow_prev',
+                },
+                pagination: {
+                    el: ".adtap"
+                },
+                direction: "scroll",
+                loop: true
+            })
+    })
+   </script>
+    
+</body>
+</html>
