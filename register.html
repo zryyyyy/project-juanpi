@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet"  href="style/loginreg-pub.css">
+    <link rel="stylesheet" href="style/loginreg-pub.css">
+    <link rel="stylesheet" href="style/register.css">
+
+<body>
+    <script src="script/loginregcookie.js"></script>
+    <script src="libs/jquery-3.3.1.js"></script>
+    <!-- 头部 -->
+    <div class="head_login">
+        <div class="area">
+            <div class="logo"></div>
+            <div class="protection">
+    
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 注册 -->
+    <div class="main">
+        <div class="main_login">
+            <div class="login_content">
+                <div class="title">
+                    <span class="hd">新用户注册</span>
+                    <span class="tips">注册卷皮网，赢积分换好礼！</span>
+                    <p class="other">
+                        已有帐号？
+                        <a href="#">立即登录</a>
+                    </p>
+                </div>
+                <div class="login_center">
+                  <div class="content_loading">
+                      <form action="" method="post" id="register">
+                          <ul>
+                            <li>
+                                <label for="" class="normal">用户名：</label>
+                                <input type="text" class="normal_input" id="user" name="email">
+                                <div class="error_box" id="email_warn" warn="">
+                                    
+                                    <p class="msg_error user_error"></p>
+                                </div>
+                                <span class="otherreg">
+                                    或
+                                    <a href="#">邮箱注册</a>
+                                </span>
+                            </li>
+
+
+                            <li class="set_password">
+                                <label for="" class="normal">创建密码：</label>
+                                <input type="password" class="normal_input" id="password" name="password">
+                                <div class="error_box" id="password_warn" warn="6-16个数字、字母或符号，字母区分大小写">
+                                    <p class="msg_error pwd_error"></p>
+                                </div>
+
+                            </li>
+                            <li>
+                                <label class="normal">确认密码：</label>
+                                <input type="password" class="normal_input" id="confirm_password" name="confirm_password">
+                                <div class="error_box" id="confirm_password_warn" warn="请再次输入密码">
+                                    <p class="msg_error againpwd_error"></p>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="" class="normal">
+                                    <div class="btn" onclick="register()">
+                                        <input type="submit" class="sub smt_o" value="立即注册" onclick="register()">
+                                       
+                                    </div>
+                                </label>
+                            </li>
+
+                          </ul>
+                      </form>
+                  </div>
+                  <div class="login_bj" style="width: 380px;">
+                      <img src="images/login-bj.png" alt="">
+                      <div class="line"></div>
+                  </div>
+                  
+                </div>
+            </div>
+            <p class="foot_tips">
+                武汉奇米网络科技有限公司 鄂ICP备10209250号 | ICP许可证号：鄂B2-20150109 |
+                <a href="#">鄂公网安备42018502000390号</a>
+                | 食品流通许可证 SP4201991510041888
+            </p>
+            <p class="foot_company" style="padding-top: 2px;">Copyright © 2010 - 2018 JuanPi.com All Rights Reserved</p>
+        </div>
+    </div>
+    <script>
+        //正则验证
+            //用户名;
+            var reg = /^[\u4E00-\u9FA5A-Za-z0-9]{2,20}$/;
+            $("#user").blur(function () {
+                $("#user").css("border-color","red")
+                var name = $(this).val();
+                if (name != "") {
+                    var matchResult = name.match(reg);
+                    if (!matchResult) {
+                        $(".user_error").show();
+                        $(".user_error").text("用户名为中文、英文、数字但不包括下划线等符号");
+                    } else {
+                        $(".user_error").hide();
+                         $("#user").css("border-color", "#c6c6c6")
+                    }
+                } else {
+                    $(".user_error").show();
+                    $(".user_error").text("请输入用户名");
+                }
+            })
+            $("#user").focus(function(){
+                $(".msg_error").hide();
+                $("#user").css("border-color", "#c6c6c6")
+            })
+
+            //密码
+            var pwdreg = /^[a-zA-Z]\w{5,17}$/;
+            $("#password").blur(function(){
+                
+                $("#password").css("border-color", "red");
+                var pwd = $(this).val();
+                if(pwd != ""){
+                    var  matchResult = pwd.match(pwdreg);
+                   
+                    if(!matchResult){
+                        $(".pwd_error").show();
+                        $(".pwd_error").text("以字母开头，长度在6~18之间，只能包含字母、数字和下划线");
+                    }else{
+                        $(".pwd_error").hide();
+                         $("#password").css("border-color", "#c6c6c6");
+                    }
+                }else{
+                    $(".pwd_error").show();
+                    $(".pwd_error").text("请输入密码");
+                }
+            })
+            $("#password").focus(function(){
+                $(".pwd_error").hide();
+                $("#password").css("border-color", "#c6c6c6");
+            })
+            //确认密码
+            $("#confirm_password").blur(function(){
+                $("#confirm_password").css("border-color", "red");
+                var againpwd = $(this).val();
+                var beforepwd = $("#password").val();
+                console.log(beforepwd);
+                console.log(againpwd);
+                console.log($(".againpwd_error"));
+                if(againpwd == ""){
+                    
+                    $(".againpwd_error").show();
+                    $(".againpwd_error").text("两次密码不相同！");
+                }else if(againpwd != beforepwd){
+                    console.log(1);
+                    $(".againpwd_error").show();
+                    $(".againpwd_error").text("两次密码不相同！");
+                }else{
+                      $("#confirm_password").css("border-color", "#c6c6c6");
+                }
+            })
+            $("#confirm_password").focus(function(){
+                $(".againpwd_error").hide();
+                $("#confirm_password").css("border-color", "#c6c6c6");
+            })
+    
+    
+    </script>
+    
+</body>
+</html>

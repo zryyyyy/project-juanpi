@@ -53,7 +53,6 @@ $(function(){
                   var jsdata = res.list;
                   console.log(jsdata);
                   var html = "";
-
                   $.each(jsdata, function(index, item) {
                     html += `<li id="${item.goods_id}">
                     <div class="list_goods buy">

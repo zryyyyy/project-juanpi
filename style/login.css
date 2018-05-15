@@ -1,38 +1,8 @@
-body{overflow-x:hidden;}
-body,h1,h3,h4,h2,h5,h6,ul,ol,p,fieldset,dd,dl,input,textarea,option,hr,td{margin:0;padding:0;}
-a{text-decoration:none; color:#333;}
-h1,h3,h4,h2,h5,h6,b,strong{font-weight:normal;}
-i,em{font-style:normal;}
-li{list-style:none;}
-img{border:none; display:block;}
-a,input{outline:none;border: none;text-decoration: none;}
-body{font:14px/1em "微软雅黑"; color:#666;}
-.clear:after{content:"."; display:block; clear:both;height:0; visibility:hidden;}
-.clear{zoom:1;}
-
-.border0{border:none;}
-
-
-
-/*头部*/
-
-.head_login{width: 1351px;height: 80px;background: #fff;border-bottom: 4px solid #ff464e;}
-.head_login .area{width: 980px;height: 76px;margin: 0 auto;position: relative;}
-.head_login .logo{top: 15px;left: 0;width: 210px;height: 56px;background: url(../images/header-total.gif) no-repeat;background-position: -78px -217px;position: absolute;}
-.head_login .protection{background: url(../images/header-total.gif) no-repeat;background-position:  0 0;position: absolute;height: 33px;width: 465px;right: 10px;top:24px;}
 
 
 /*登陆*/
 
-.main{width: 980px;margin: 0 auto;}
-.main .main_login{width: 980px;margin: 20px auto 0;}
-.main .main_login .login_content{width: 980px;position: relative;background: #fff;overflow: hidden;border: 1px solid #e2e2e2;padding-bottom: 50px;}
-.login_content .title{width: 878px;padding: 20px 50px;border-bottom: #e2e2e2 solid 1px;overflow: hidden;}
-.login_content .title span.hd{color: #ff464e;font-size: 16px;font-family: "微软雅黑","宋体";margin-right: 10px;background: url(../images/hd-bg.gif) no-repeat center right;padding-right: 20px;float: left;}
-.login_content .title span.tips{color: #666;float: left;font-size: 12px;}
-.login_content .other{float: right;font-size: 14px;color: #999;}
-.login_content .other a{color: #0289cd;}
-.login_content .login_center{padding: 30px 80px 0 80px;width: 818px;height: auto;overflow: hidden;}
+
 .login_content .login_center .content_loading{width: 450px;float: left;display: inline;}
 .login_content .login_center .login_img{overflow: hidden;width: 358px!important;text-align: right;float: right;display: inline;}
 .login_content .login_center .content_loading ul{clear: both;}
@@ -56,3 +26,6 @@ body{font:14px/1em "微软雅黑"; color:#666;}
 .login_content .login_center .content_loading li .btn{float: left;width: 260px;margin-left: 84px;}
 .login_content .login_center .content_loading li .btn .sub{width: 260px;height: 40px;cursor: pointer;font-size: 16px;border-radius: 2px;background-position: 0 0 ;color: #fff;background: url(../images/new-login.gif) no-repeat;}
 .login_content .login_center .content_loading .third_login{text-align: center;}
+
+
+

@@ -1,0 +1,19 @@
+.login_center .content_loading{width: 450px;float: left;}
+form{display:block;}
+.login_center .content_loading ul{clear: both;}
+.login_center .content_loading li{padding-bottom: 25px;overflow: visible;height: auto;position: relative;height: 45px;clear: both}
+.login_center .content_loading li label.normal{width: 80px;text-align: right;float: left;display: inline;height: 20px;margin-top: 8px;font-size: 14px;}
+label{cursor: pointer;}
+.login_center .content_loading li.error_box .normal_input{border: 1px solid #ff464e;}
+.login_center .content_loading li .normal_input{color: #666;padding: 12px 0 12px 10px;border: 1px solid #c6c6c6;height: 14px;line-height: 14px;width: 250px;float: left;}
+.login_center .content_loading li .error_box{margin-left: 10px;width: 16px;height: 16px;margin-top: 10px;color: #666;float: left;overflow: hidden;}
+
+.login_center .content_loading li strong{ font-weight: bold; width: 16px;height: 16px;background: url(../images/error.png) no-repeat;display: inline-block;margin-right: 3px;}
+.login_center .content_loading li .msg_error{width: 330px;height: 16px;overflow: hidden;position: absolute;top: 42px;left: 90px;color: #ff464e;}
+.login_center .content_loading li .otherreg{height: 40px;line-height: 40px;padding-left: 6px;display: inline-block;margin-top: -2px;}
+.login_center .content_loading li:after{clear: both;content: ".";display: block;height: 0;visibility: hidden;}
+
+.login_content .login_center .content_loading li .btn{float: left;width: 260px;margin-left: 84px;}
+.login_content .login_center .content_loading li .btn .sub{width: 260px;height: 40px;cursor: pointer;font-size: 16px;border-radius: 2px;background-position: 0 0 ;color: #fff;background: url(../images/new-login.gif) no-repeat;}
+.login_bj{overflow: hidden;width: 358px !important;text-align: right;margin-right: -63px!important;float: right;display: inline;}
+.login_bj .line{height: 1px;width: 290px;margin: 20px 67px 15px;border-top: #e2e2e2 solid 1px;border-bottom: #e2e2e2 solid 1px;float: right;}

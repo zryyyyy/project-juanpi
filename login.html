@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="style/login.css" />
+     <link rel="stylesheet" href="style/loginreg-pub.css" />
 </head>
 <body>
-
+        <script src="script/loginregcookie.js"></script>
+        <script src="libs/jquery-3.3.1.js"></script>
     <!-- 头部 -->
     <div class="head_login">
         <div class="area">
@@ -48,7 +50,7 @@
                                     <label for="" class="normal"></label>
                                     <div class="box_border">
                                         <div class="code_img"></div>
-                                        <input type="password" class="normal_input" placeholder="密码" name="password">
+                                        <input type="password" class="normal_input" id="pwd" placeholder="密码" name="password">
                                         <div class="dele_info_img"></div>
                                     </div>
                                     <div class="error_box" id="password_warn"></div>
@@ -69,7 +71,7 @@
                                 <li>
                                     <label for="" class="normal">
                                         <div class="btn">
-                                            <input type="submit" class="sub smt_o" value="登录">
+                                            <input type="submit" class="sub smt_o" value="登录" onclick="login()">
                                         </div>
                                     </label>
                                 </li>
@@ -82,9 +84,24 @@
                     </div>
                 </div>
             </div>
+            <p class="foot_tips">
+                 武汉奇米网络科技有限公司 鄂ICP备10209250号 | ICP许可证号：鄂B2-20150109 |
+                <a href="#">鄂公网安备42018502000390号</a>
+                 | 食品流通许可证 SP4201991510041888
+            </p>
+            <p class="foot_company" style="padding-top: 2px;">Copyright © 2010 - 2018 JuanPi.com All Rights Reserved</p>
         </div>
     </div>
 
+
+    <script>
+        
+    
+        
+    
+    
+    </script>
+  
 
     
 </body>
