@@ -171,7 +171,7 @@
                     console.log(this.prev,this.index)
 
                     //判定从左到右 还是从右到左;
-                    if(this.prev > this.index){
+                    if(this.prev > this.index &&(this.index == this.bannerNum-1 && this.index == 0)){
                         //左;
                         this.bannerItem.eq(this.prev)
                         .animate({

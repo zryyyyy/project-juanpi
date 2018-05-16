@@ -92,4 +92,16 @@ $(function(){
                 },
                 method: "get"
               });
-            });
+
+
+             $(".log").click(function(){
+               window.location.href="login.html"
+             })
+             $(".reg").click(function() {
+               window.location.href = "register.html";
+             });
+            
+           if($.cookie("statue")){
+             $(".logreg a").text($.cookie("statue"));
+           }
+  });

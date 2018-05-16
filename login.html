@@ -7,10 +7,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="style/login.css" />
      <link rel="stylesheet" href="style/loginreg-pub.css" />
+   
 </head>
 <body>
-        <script src="script/loginregcookie.js"></script>
-        <script src="libs/jquery-3.3.1.js"></script>
+        
+    
     <!-- 头部 -->
     <div class="head_login">
         <div class="area">
@@ -30,7 +31,7 @@
                     <span class="tips">尊敬的卷皮用户，欢迎您回来！</span>
                     <p class="other">
                         还没帐号？
-                        <a href="#">立即去注册</a>
+                        <a class="goregister" href="#">立即去注册</a>
                     </p>
                 </div>
                 <div class="login_center">
@@ -71,7 +72,7 @@
                                 <li>
                                     <label for="" class="normal">
                                         <div class="btn">
-                                            <input type="submit" class="sub smt_o" value="登录" onclick="login()">
+                                            <input type="button" class="sub smt_o login1" value="登录" >
                                         </div>
                                     </label>
                                 </li>
@@ -93,14 +94,9 @@
         </div>
     </div>
 
-
-    <script>
-        
-    
-        
-    
-    
-    </script>
+    <script src="libs/jquery-3.3.1.js"></script>
+    <script src="libs/jquery.cookie.js"></script>
+    <script src="script/loginregcookie.js"></script>
   
 
     

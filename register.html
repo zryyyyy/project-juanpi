@@ -8,10 +8,12 @@
     <link rel="stylesheet"  href="style/loginreg-pub.css">
     <link rel="stylesheet" href="style/loginreg-pub.css">
     <link rel="stylesheet" href="style/register.css">
+    <script src="libs/jquery-3.3.1.js"></script>
 
 <body>
-    <script src="script/loginregcookie.js"></script>
-    <script src="libs/jquery-3.3.1.js"></script>
+
+    
+   
     <!-- 头部 -->
     <div class="head_login">
         <div class="area">
@@ -32,7 +34,7 @@
                     <span class="tips">注册卷皮网，赢积分换好礼！</span>
                     <p class="other">
                         已有帐号？
-                        <a href="#">立即登录</a>
+                        <a class="gologin" href="#">立即登录</a>
                     </p>
                 </div>
                 <div class="login_center">
@@ -46,10 +48,7 @@
                                     
                                     <p class="msg_error user_error"></p>
                                 </div>
-                                <span class="otherreg">
-                                    或
-                                    <a href="#">邮箱注册</a>
-                                </span>
+                                
                             </li>
 
 
@@ -70,8 +69,8 @@
                             </li>
                             <li>
                                 <label for="" class="normal">
-                                    <div class="btn" onclick="register()">
-                                        <input type="submit" class="sub smt_o" value="立即注册" onclick="register()">
+                                    <div class="btn">
+                                        <input type="button" class="sub smt_o register1" value="立即注册" >
                                        
                                     </div>
                                 </label>
@@ -95,6 +94,8 @@
             <p class="foot_company" style="padding-top: 2px;">Copyright © 2010 - 2018 JuanPi.com All Rights Reserved</p>
         </div>
     </div>
+       <script src="script/loginregcookie.js"></script>
+   
     <script>
         //正则验证
             //用户名;
@@ -117,7 +118,7 @@
                 }
             })
             $("#user").focus(function(){
-                $(".msg_error").hide();
+                $(".user_error").hide();
                 $("#user").css("border-color", "#c6c6c6")
             })
 
@@ -151,15 +152,13 @@
                 $("#confirm_password").css("border-color", "red");
                 var againpwd = $(this).val();
                 var beforepwd = $("#password").val();
-                console.log(beforepwd);
-                console.log(againpwd);
-                console.log($(".againpwd_error"));
+              
                 if(againpwd == ""){
                     
                     $(".againpwd_error").show();
                     $(".againpwd_error").text("两次密码不相同！");
                 }else if(againpwd != beforepwd){
-                    console.log(1);
+        
                     $(".againpwd_error").show();
                     $(".againpwd_error").text("两次密码不相同！");
                 }else{

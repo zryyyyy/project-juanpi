@@ -17,10 +17,13 @@ body{font:14px/1em "微软雅黑"; color:#666;}
 /* 顶部导航*/
 #header{width: 1351px;height: 30px;background: #f6f6f6;}
 #header .midhead{width: 1200px;height:30px;margin: 0 auto;}
-#header .midhead>ul{width: 537px;height: 30px;float:right;line-height: 30px;}
+#header .midhead>ul{height: 30px;float:right;line-height: 30px;}
 #header .midhead>ul li{float: left;padding: 0 9px;}
 #header .midhead>ul li a:hover{color: #ff464e;}
+#header .midhead>ul .logreg:hover{color: #666}
 #header .midhead>ul>li span{color: red;margin-left: 15px;}
+#header .midhead>ul li.logreg span:hover #header .midhead>ul .logreg em{color: #666;}
+#header .midhead>ul>li em:hover{color: #ff464e;}
 #header .midhead>ul .shop a:hover{color: #666;}
 #header .midhead>ul .shop:hover{background: #fff;box-shadow: 0 1px 3px #d9d9d9;}
 #header .midhead>ul .shop em{width:18px;font-family: "宋体"; height:18px;float:right;background: none repeat scroll 0 0#ff464e;border-radius: 15px;display:inline;text-align:center;line-height:18px;color: #f6f6f6;margin: 6px 0 0 5px}

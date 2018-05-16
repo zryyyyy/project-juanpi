@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="style/xinpin.css" />
      <link rel="stylesheet" href="style/fenye.css" />
     <script src="libs/jquery-3.3.1.js"></script>
+    <script src="libs/jquery.cookie.js"></script>
     
 </head>
 <body>
     <div id = "header">
         <div class="midhead">
             <ul>
-                <li><a href="#">登陆 <span>免费注册</span></a></li>
+                <li class="logreg"><a class="log" href="#">登陆</a> <a href="#"><span class="reg">免费注册</span></a></li>
                 <li><a href ="#">我的订单</a></li>
                 <li><a href="#">商家入驻</a></li>
                 <li class = "shop"><span class="bag_show"></span><a href="#">购物袋</a><em>0</em> </li>
@@ -318,6 +319,8 @@
 
     <script src="script/index.js"></script>
     <script src= "script/jquery.banner.js"></script>
+   
+    
    <script>
    $(function () {
         $(".content")
