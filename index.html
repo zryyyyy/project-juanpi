@@ -8,8 +8,9 @@
     <link rel = "stylesheet" href = "style/index.css"/>
     <link rel="stylesheet" href="style/xinpin.css" />
      <link rel="stylesheet" href="style/fenye.css" />
-    <script src="libs/jquery-3.3.1.js"></script>
-    <script src="libs/jquery.cookie.js"></script>
+        <link rel="stylesheet" href="style/public.css" />
+   
+
     
 </head>
 <body>
@@ -317,26 +318,14 @@
     </div>
 
 
-    <script src="script/index.js"></script>
-    <script src= "script/jquery.banner.js"></script>
-   
-    
+    <script src="libs/require.js"></script>
    <script>
-   $(function () {
-        $(".content")
-            .gpBanner(".banner", {
-                navigation: {
-                    nextEl: '.arrow_next',
-                    prevEl: '.arrow_prev',
-                },
-                pagination: {
-                    el: ".adtap"
-                },
-                direction: "scroll",
-                loop: true
+        require(["./libs/require.config"], function () {
+                require(["index"])
             })
-    })
-   </script>
+   </script>    
+ 
+    
     
 </body>
 </html>

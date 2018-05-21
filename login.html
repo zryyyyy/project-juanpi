@@ -94,11 +94,13 @@
         </div>
     </div>
 
-    <script src="libs/jquery-3.3.1.js"></script>
-    <script src="libs/jquery.cookie.js"></script>
-    <script src="script/loginregcookie.js"></script>
-  
-
+ 
+  <script src="libs/require.js"></script>
+        <script>
+             require(["./libs/require.config"], function () {
+                    require(["cookie"])
+                })
+        </script>
     
 </body>
 </html>

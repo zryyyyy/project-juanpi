@@ -25,7 +25,9 @@
 // 2. 渲染元素;
 // 3. 做所有的动画功能;
 // 4. 下标处理;
-;+function($){
+
+define(["jquery"],function(){
+    ;+function($){
     $.fn.gpBanner = function(banner_selector,options){
         //单例模式构造函数;
         // var banner = $.extend(this,{
@@ -221,5 +223,7 @@
     }
   
 }(jQuery);
+})
+
 
 
