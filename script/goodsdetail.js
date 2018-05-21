@@ -10,7 +10,6 @@ define(["jquery","jquerycookie"],function(){
         this.tab = $("#tab_title")
         console.log(this.cprice);
         this.oprice = $(".js_oprice");
-      
         this.init();
     }
     addcar.prototype = { 
@@ -30,7 +29,7 @@ define(["jquery","jquerycookie"],function(){
             $(".addcar_btn").on("click.changeNum", $.proxy(this.changeNum, this));
             $(".increase").on("click",function(){
              this.zrynum ++;
-             console.log(this.zrynum)
+             
                 $("#goodsnum").val(this.zrynum)
                 if( $("#goodsnum").val()>=2){
                     $(".decrease").removeClass("no");  
@@ -97,10 +96,8 @@ define(["jquery","jquerycookie"],function(){
             }
           }.bind(this));
       }, 
-      addcookie() {
-          
-        var goodsid = $(".addcar_btn").attr("data_id");
-   
+      addcookie() {          
+        var goodsid = $(".addcar_btn").attr("data_id");   
         if (!$.cookie("addcar")) {
           var shopcararray = [{ id: goodsid, num: Number($("#goodsnum").val()) }];
           $.cookie("addcar", JSON.stringify(shopcararray)); 
@@ -108,33 +105,28 @@ define(["jquery","jquerycookie"],function(){
         }
         var shopcarstring = $.cookie("addcar");
         var shopcararray = JSON.parse(shopcarstring);
-          var hasitem = false;
-        
-        $.each(shopcararray, function(index, item) {
-            
+        var hasitem = false;       
+        $.each(shopcararray, function(index, item) {            
           if (item.id == goodsid) {
-            hasitem = true;
-           
+            hasitem = true;           
             item.num += Number($("#goodsnum").val());
           }
         });
         if (!hasitem) {
-          var item = [{ id: goodsid, num: Number($("#goodsnum").val()) }];
+          var item = { id: goodsid, num: Number($("#goodsnum").val()) };
           shopcararray.push(item);
         }
-        $.cookie("addcar", JSON.stringify(shopcararray));
+        $.cookie("addcar", JSON.stringify(shopcararray));        
       }, 
       changeNum() {
         this.num.html(this.getnum());
         this.rnum.html(this.getnum());
       },
-
       getnum(){
         var shopcarstring = $.cookie("addcar");
 
         if(shopcarstring){
             var shopcararray = JSON.parse(shopcarstring);
-
             var sum=0;
             $.each(shopcararray,function(index,item){
               sum += Number(item.num)
@@ -142,6 +134,7 @@ define(["jquery","jquerycookie"],function(){
             })
             return sum;
         }
+     
         return 0;
     }
 }
