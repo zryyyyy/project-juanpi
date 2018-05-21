@@ -47,37 +47,3 @@
 
 
 
-/*页脚*/
-.foot{width:1351px;height: 356.5px;position: relative;margin: 0 auto;margin-top: 40px;background: #f9f9f9;z-index: 100;border-top: #ce003f solid 1px;clear: both;}
-.foot .white_bg{width:1351px;height: 355.5px;border-top: #ff464e solid 4px;}
-.foot .white_bg .foot_con{width: 1200px;height: 351.5px;padding: 0 50px;margin: 0 auto;padding-bottom: 30px;}
-.foot .white_bg .foot_con .con_box_n{width: 1100px;height: 161px;padding-top: 25px;margin: 0 auto;}
-.foot .white_bg .foot_con .app-side-box{width:90px;height: 136px;float: left;}
-.foot .white_bg .foot_con .f1{float: left;display: inline;}
-.foot .white_bg .foot_con .app-side-box .app-show{background:url(../images/erweima.png) no-repeat;height:90px;width:90px;margin-top:5px;}
-.foot .white_bg .foot_con .app-side-box .app-txt{font-size:12px;margin:10px 0;}
-.foot .white_bg .foot_con .con_left_info{padding-left: 65px;width: 765px;height: 123px;overflow: hidden;float: left;display: inline;}
-.foot .white_bg .foot_con .con_left_info dl{width: 200px;float: left;display: inline;}
-.foot .white_bg .foot_con .con_left_info dt{font-size: 14px;color: #333;font-weight: bold;margin-bottom: 10px;padding-left: 7px;}
-.foot .white_bg .foot_con .con_left_info dd{margin-bottom: 9px;color: #666;}
-.foot .white_bg .foot_con .con_left_info dd a{font-size: 12px;color: #666;}
-.foot .white_bg .foot_con .con_left_info dd i{width: 4px;height: 4px;overflow: hidden;border-radius: 50%;background: #c6c6c6;display: inline-block;margin-right: 5px;float: left;margin-top: 7px;}
-.foot .white_bg .foot_con .con_left_info .help_info{width: 100px;}
-.foot .white_bg .foot_con .con_menu{margin-top: 35px;float: right;display: inline;}
-.foot .white_bg .foot_con .con_menu a{display: block;width: 86px;height: 40px;background: url(../images/lianxi.gif) no-repeat;float: left;}
-.foot .white_bg .foot_con .con_menu .service_time{padding-left: 10px;width: 65px;float: left;display: inline;}
-.foot .white_bg .foot_con .con_menu .service_time p{color: #919191;line-height: 18px;margin-top: 3px;font-size: 12px;}
-.foot .white_bg .links{width:1100px;height: 20px;padding: 10px 0px;border-bottom: 1px dotted #ccc;color: #999;white-space: nowrap;overflow: hidden;margin: 0 auto;}
-.foot .white_bg .links a{float: right;color: #999;}
-.foot .white_bg .links span{float: left;display: block;overflow: hidden;}
-.foot .white_bg .links .links_box{width: 970px;height: 20px;float: left;position: relative;overflow: hidden;}
-.foot .white_bg .links .links_list{white-space: nowrap;overflow: hidden;position: relative;}
-.foot .white_bg .links .links_list li{height: 20px;white-space: nowrap;overflow: hidden;position: relative;margin-bottom: 5px;}
-.foot .white_bg .links .links_list li a{float: left;margin: 0px 10px 10px 10px;}
-.foot .white_bg .foot_company{text-align: center;color: #c6c6c6;padding-top: 20px;}
-.foot .white_bg .logo{text-align: center;padding-top: 10px;color: #999;}
-.foot .white_bg .logo .logo_wrap{width: 545px;height: 47px;margin-left: 300px;}
-.foot .white_bg .logo a{margin-right: 27px;cursor: pointer;float: left;}
-
-
-

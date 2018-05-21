@@ -1,0 +1,44 @@
+.cartmid{height: auto;width: 1200px;margin: 0 auto;}
+.carthead{height: 45px;width: 100%;line-height: 45px;color: #a3a3a3;}
+.carthead div{float: left;width: 230px;text-align: center;box-sizing: border-box;}
+.carthead .cart1{text-align: left;padding: 0 0 0 33px;margin:  0 0 0 163px;}
+.carthead .cart3{width: 170px;}
+.carthead .cart4{width: 215px;}
+.carthead .cart5{width: 155px;}
+.cartlist{height: auto;width: 1200px;box-sizing: border-box;background: #fff;box-shadow: #f1f1f1 0 0 1px;}
+.cartlist .carttop{position: relative;padding: 0 0 20px 0;}
+.cartlist .listtop{height: 52px;width: 1160px;line-height: 52px;padding: 0 5px 0 0;box-sizing: border-box;margin: 0 auto;}
+.cartlist .listtop .yuanwrap{float: left;height: 99%;width: 40px;text-align: center;}
+ .yuan{position: relative;top: -1px;vertical-align: middle;display: inline-block;border-radius: 15px;cursor: pointer;border: #9b9b9b 1px solid;width: 15px;height: 15px;line-height: 15px;transition: background 0.2s linear;}
+.clear1:before{content: "";position: absolute;top: 0px;left: 0px;transform:rotate(0) scale(0);display: table;border: 2px solid #fff;border-top: 0;border-left: 0;width: 3px;height: 7px;left: 5px;top: 2px;transition: all 0.3s cubic-bezier(0.12,0.4,0.29,1.46);}
+.cartlist .listtop .kuadian{padding: 0 10px 0 0px;display: inline;}
+.kuaimg{position: relative;top: -1px;padding: 0 5px 0 0;height: 20px;width: 20px;display: inline-block;vertical-align: middle;}
+.manjian{color: #ff464e;padding: 0 4px 0 4px;}
+.listwrap{position: relative;height: 126px;width: 1158px;border: #efefef 1px solid;border-top: 0;background: #fafafa;margin: 0 auto;transition: background 0.2s linear;}
+.listwrap:first-child{border-top: #efefef 1px solid;}
+.selectwrap{padding: 55px 0;box-sizing: border-box;float: left;height: 99%;width: 40px;text-align: center;}
+.goodimg{float: left;height: 100px;width: 100px;margin: 13px 0 13px 0;}
+.goodsmsg{padding: 0 13px 0 13px;line-height: 18px;margin-left: 6px;}
+.pub{float: left;margin: 13px 0 13px 0;height: 100px;width: 230px;box-sizing: border-box;}
+.goodsmsg .goodstitle{color: #666666;font-weight: 400;min-height: 40px;display: block;padding: 0 0 10px 0;}
+.goodsmsg .sizecolor{color: #999;}
+.price{text-align: center;font-size: 14px;line-height: 100px;}
+.price .oprice{color: #ccc;padding:  0 0 0 5px;font-size: 12px;font-style: normal;}
+.goodsnum{height: 22px;width: auto;border: #e1e1e1 1px solid;margin: 52px 43px 0 43px;}
+.goodsnum .jian{border-right: #e1e1e1 1px solid;height: 20px;width: 20px;line-height: 18px;display: inline-block;text-align: center;font-weight: 700;color: #ccc;background: #fff;font-size: 14px;cursor: not-allowed;transition: color 0.2s linear;}
+.goodsnum .shuzi{width: auto;color: #999;font-weight: 400;font-size: 12px;line-height: 20px;padding: 0 10px 0 10px;height: 19px;display: inline-block;text-align: center;background: #fff;cursor: pointer;}
+.goodsnum .jia{border-left: #e1e1e1 1px solid;height: 20px;width: 20px;line-height: 18px;display: inline-block;text-align: center;font-weight: 700;color: #666;background: #fff;font-size: 14px;cursor: pointer;transition: color 0.2s linear;}
+.total{text-align: center;font-size: 14px;color: #ff464e;line-height: 100px;}
+.slice{width: 135px;text-align: center;}
+.slice .shanchu{background: url(../images/delete.png);transition: transform 0.2s linear;display: inline-block;height: 24px;width: 24px;margin: 38px auto 0 0;cursor: pointer;background-position: center center;}
+.cartlist .pay{margin: 10px 0 0 0;height: 48px;width: 100%;line-height: 48px;border-top: #efefef 1px solid;color: #666666;box-shadow: #fafafa 0 -1px 2px;}
+.payselect{float: left;margin:  0 0 0 20px;font-size: 14px;color: #666;}
+.quanwrap{float: left;height: 99%;width: 40px;text-align: center;}
+.paytotal{float: right;}
+.totalnum{color: #ff464e;padding: 0 5px 0 5px;}
+.totalmsg{padding: 0 5px 0 5px;font-size: 12px;}
+.zongjia{color: #ff464e;font-size: 18px;padding: 0 5px 0 5px;}
+.gopay{position: relative;top: -2px;height: 48px;width: 200px;background: #ff464e;color: #fff;font-size: 18px;text-align: center;border: 0;margin: 0 0 0 25px;cursor: pointer;outline: 0;transition:  all 0.2s linear;}
+
+.check{background: #ff464e;border-color: #ff464e;}
+.check::before{transform: rotate(45deg) scale(1)}

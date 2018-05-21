@@ -1,5 +1,6 @@
 define(["jquery","jquerycookie"],function(){
     $(function(){
+   
         new addcar("script/goods.json")
     })
     function addcar(url){
@@ -15,11 +16,13 @@ define(["jquery","jquerycookie"],function(){
     addcar.prototype = { 
         constructor: addcar, 
         init() {
-            this.loading().then(function(res) {
+            this.loading()
+            .then(function(res) {
                 this.jsdata = res.list;
                 console.log(this.jsdata);
                 this.render();
             }.bind(this));
+         
             this.num = $(".shop em");
             this.rnum = $(".num");
             this.num.html(this.getnum());

@@ -6,6 +6,8 @@ requirejs.config({
         "register":"./script/register",
         "cookie":"./script/loginregcookie",
         "jquerycookie":"./libs/jquery.cookie",
-        "detail":"./script/goodsdetail"
+        "detail":"./script/goodsdetail",
+        "indexcookie":"./script/indexcookie",
+        "shopcar":"./script/shopcar"
     }
 })
