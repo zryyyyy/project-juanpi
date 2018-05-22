@@ -147,6 +147,7 @@ define(["jquery","jquerycookie"],function(){
                   }
                     $.cookie("addcar", JSON.stringify(shopcararray));   
                 })
+                location.reload();
                 
             if (num >= 2) {
               $(".jian").css("cursor", "pointer");
@@ -174,6 +175,7 @@ define(["jquery","jquerycookie"],function(){
                   }
                     $.cookie("addcar", JSON.stringify(shopcararray));   
                 })
+                 location.reload();
                  if (num <= 1) {
                    $(".jian").css("cursor", "not-allowed");
                    $(".jian").css("color", "#333");

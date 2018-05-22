@@ -9,6 +9,9 @@ requirejs.config({
         "detail":"./script/goodsdetail",
         "indexcookie":"./script/indexcookie",
         "shopcar":"./script/shopcar",
-       
+       "fangdajing":"./script/fangdajing",
+       "magnifier":"./script/magnifier"
+      
+
     }
 })

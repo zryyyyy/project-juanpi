@@ -1,4 +1,5 @@
-define(["jquery","jquerycookie"],function(){
+define(["fangdajing","jquery","jquerycookie"],function(res1){
+  
     $(function(){
    
         new addcar("script/goods.json")
@@ -9,36 +10,34 @@ define(["jquery","jquerycookie"],function(){
         this.title = $(".deal_wrap h1");
         this.cprice = $(".js_cprice");
         this.tab = $("#tab_title")
-        console.log(this.cprice);
         this.oprice = $(".js_oprice");
         this.init();
     }
     addcar.prototype = { 
         constructor: addcar, 
         init() {
-         
             this.loading()
             .then(function(res) {
                 this.jsdata = res.list;
                 console.log(this.jsdata);
                 this.render();
+                res1.init(".pic")
             }.bind(this));
-            
-              if ($.cookie("statue")) {
-                  $(".logreg .log").text($.cookie("statue"));
-                  $(".logreg").find("a").eq(1).html("退出")
-                  $(".logreg").find("a").eq(1).css("color","#ff464e")
-                }
-                  $(".side_cart").click(function() {
-                  window.location.href = "shopcar.html";
-                });
-         
-                $(".shop a").click(function(){
-                  window.location.href = "shopcar.html";
-                })
-                 $(".logreg").find("a").eq(1).click(function(){
-                  window.location.href = "login.html"
-                })
+            if ($.cookie("statue")) {
+                $(".logreg .log").text($.cookie("statue"));
+                $(".logreg").find("a").eq(1).html("退出")
+                $(".logreg").find("a").eq(1).css("color","#ff464e")
+              }
+                $(".side_cart").click(function() {
+                window.location.href = "shopcar.html";
+              });
+        
+              $(".shop a").click(function(){
+                window.location.href = "shopcar.html";
+              })
+                $(".logreg").find("a").eq(1).click(function(){
+                window.location.href = "login.html"
+              })
               
             this.num = $(".shop em");
             this.rnum = $(".num");
