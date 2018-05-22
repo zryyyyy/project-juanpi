@@ -16,13 +16,30 @@ define(["jquery","jquerycookie"],function(){
     addcar.prototype = { 
         constructor: addcar, 
         init() {
+         
             this.loading()
             .then(function(res) {
                 this.jsdata = res.list;
                 console.log(this.jsdata);
                 this.render();
             }.bind(this));
+            
+              if ($.cookie("statue")) {
+                  $(".logreg .log").text($.cookie("statue"));
+                  $(".logreg").find("a").eq(1).html("退出")
+                  $(".logreg").find("a").eq(1).css("color","#ff464e")
+                }
+                  $(".side_cart").click(function() {
+                  window.location.href = "shopcar.html";
+                });
          
+                $(".shop a").click(function(){
+                  window.location.href = "shopcar.html";
+                })
+                 $(".logreg").find("a").eq(1).click(function(){
+                  window.location.href = "login.html"
+                })
+              
             this.num = $(".shop em");
             this.rnum = $(".num");
             this.num.html(this.getnum());
@@ -47,6 +64,7 @@ define(["jquery","jquerycookie"],function(){
                  $("#goodsnum").val(this.zrynum);
                }.bind(this));
         },
+       
         loading() {
         var opt = { url: this.url };
         return $.ajax(opt);
@@ -99,6 +117,7 @@ define(["jquery","jquerycookie"],function(){
             }
           }.bind(this));
       }, 
+     
       addcookie() {          
         var goodsid = $(".addcar_btn").attr("data_id");   
         if (!$.cookie("addcar")) {

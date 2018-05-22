@@ -8,6 +8,7 @@ requirejs.config({
         "jquerycookie":"./libs/jquery.cookie",
         "detail":"./script/goodsdetail",
         "indexcookie":"./script/indexcookie",
-        "shopcar":"./script/shopcar"
+        "shopcar":"./script/shopcar",
+       
     }
 })

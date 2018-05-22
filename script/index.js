@@ -53,8 +53,19 @@
       });
 
       if ($.cookie("statue")) {
-        $(".logreg a").text($.cookie("statue"));
+        $(".logreg .log").text($.cookie("statue"));
+        $(".logreg").find("a").eq(1).html("退出")
+        $(".logreg").find("a").eq(1).css("color","#ff464e")
       }
+      $(".shop a").click(function(){
+        window.location.href = "shopcar.html";
+      })
+      $(".side_cart").click(function() {
+        window.location.href = "shopcar.html";
+      });
+      $(".logreg").find("a").eq(1).click(function(){
+        window.location.href = "login.html"
+      })
     });
 
     //轮播图
