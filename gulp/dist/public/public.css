@@ -43,8 +43,8 @@ body{font:14px/1em "微软雅黑"; color:#666;}
 #navigation .mainnav .nav .nav_ul{float: left;position: absolute;}
 #navigation .mainnav .nav .nav_ul li{padding: 0 20px;height:38px;float: left;position: relative;left: 0;font-size:16px;line-height: 38px; }
 #navigation .mainnav .nav .nav_ul li a:hover{color: #ff464e;}
-#navigation .mainnav .nav .nav_ul .nav_color{background:#ff464e;border-radius: 6px 6px 0 0 ;}
-#navigation .mainnav .nav .nav_ul .nav_color a{color: white;}
+#navigation .mainnav .nav .nav_ul .nav_color{border-radius: 6px 6px 0 0 ;}
+#navigation .mainnav .nav .nav_ul .nav_color a{color: #333;}
 #navigation .mainnav .nav .nav_ul .new_phone .new_code {display: none;}
 #navigation .mainnav .nav .nav_ul .new_phone:hover .new_code{display: block;}
 #navigation .mainnav .nav .nav_ul li .phone{margin-top: 12px;background: url(../images/phone.png) no-repeat;float: left;width: 16px;height: 25px;vertical-align: baseline;}

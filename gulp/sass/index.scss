@@ -1,0 +1,96 @@
+.shopwrap{
+   
+    background: #fff;
+    height: 110px;
+    .shopname{
+        width: 1200px;
+        height: 90px;
+        margin: 0 auto;
+        
+        .store{
+            padding: 20px 0;
+            padding-left: 20px;
+            position: relative;
+            
+            .storetu{
+            //    position: absolute;
+            //    left: -7px;
+            //    top: 0px;
+                float: left;
+                left: -25px;
+                top: -34px;
+            }
+            p{
+                float: left;
+                font-size: 24px;
+                color:black;
+                line-height: 24px;
+              
+            }
+            .collect{
+                position: absolute;
+                top: 33px;
+                right: 40px;
+            }
+        }
+        
+    }
+}
+
+.goods{
+    background: #fff;
+    .goodslist{
+        width: 1200px;
+        margin: 0 auto;
+       .wrap{
+        overflow: hidden;
+        padding-left: 8px;
+        ul{
+            width: 1190px;
+            margin-left: 8px;
+            li{
+                width: 230px;
+                background: #FFF;
+                float: left;
+                margin: 0 6px 12px 0;
+                height: 290px;
+                box-sizing: border-box;
+                padding-top: 6px;
+                border: 1px solid transparent;
+                .ulimg{
+                    height: 220px;
+                    width: 220px;
+                    max-width: 220px;
+                    max-height: 220px;
+                    background-position-y: -70px;
+                    background-position-x: -15px;
+                    
+                }
+                h4{
+                    font-size: 16px;
+                    color: #ff464e;
+                    padding-top: 10px;
+                    span{
+                        color: #bbb;
+                        text-decoration: line-through;
+                        font-size: 14px;
+                    }
+                }
+                p{
+                    font-size: 16px;
+                    color: black;
+                    padding-top: 10px;
+                }
+            }
+        }
+       }
+    }
+}
+
+@for $i from 1 through 16
+{
+    .ulimg#{$i}{
+       
+        background: url("../images/good#{$i}.jpg");
+    }
+}

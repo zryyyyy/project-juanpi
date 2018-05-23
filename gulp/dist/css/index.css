@@ -1,0 +1,112 @@
+.shopwrap {
+  background: #fff;
+  height: 110px; }
+  .shopwrap .shopname {
+    width: 1200px;
+    height: 90px;
+    margin: 0 auto; }
+    .shopwrap .shopname .store {
+      padding: 20px 0;
+      padding-left: 20px;
+      position: relative; }
+      .shopwrap .shopname .store .storetu {
+        float: left;
+        left: -25px;
+        top: -34px; }
+      .shopwrap .shopname .store p {
+        float: left;
+        font-size: 24px;
+        color: black;
+        line-height: 24px; }
+      .shopwrap .shopname .store .collect {
+        position: absolute;
+        top: 33px;
+        right: 40px; }
+
+.goods {
+  background: #fff; }
+  .goods .goodslist {
+    width: 1200px;
+    margin: 0 auto; }
+    .goods .goodslist .wrap {
+      overflow: hidden;
+      padding-left: 8px; }
+      .goods .goodslist .wrap ul {
+        width: 1190px;
+        margin-left: 8px; }
+        .goods .goodslist .wrap ul li {
+          width: 230px;
+          background: #FFF;
+          float: left;
+          margin: 0 6px 12px 0;
+          height: 290px;
+          box-sizing: border-box;
+          padding-top: 6px;
+          border: 1px solid transparent; }
+          .goods .goodslist .wrap ul li .ulimg {
+            height: 220px;
+            width: 220px;
+            max-width: 220px;
+            max-height: 220px;
+            background-position-y: -70px;
+            background-position-x: -15px; }
+          .goods .goodslist .wrap ul li h4 {
+            font-size: 16px;
+            color: #ff464e;
+            padding-top: 10px; }
+            .goods .goodslist .wrap ul li h4 span {
+              color: #bbb;
+              text-decoration: line-through;
+              font-size: 14px; }
+          .goods .goodslist .wrap ul li p {
+            font-size: 16px;
+            color: black;
+            padding-top: 10px; }
+
+.ulimg1 {
+  background: url("../images/good1.jpg"); }
+
+.ulimg2 {
+  background: url("../images/good2.jpg"); }
+
+.ulimg3 {
+  background: url("../images/good3.jpg"); }
+
+.ulimg4 {
+  background: url("../images/good4.jpg"); }
+
+.ulimg5 {
+  background: url("../images/good5.jpg"); }
+
+.ulimg6 {
+  background: url("../images/good6.jpg"); }
+
+.ulimg7 {
+  background: url("../images/good7.jpg"); }
+
+.ulimg8 {
+  background: url("../images/good8.jpg"); }
+
+.ulimg9 {
+  background: url("../images/good9.jpg"); }
+
+.ulimg10 {
+  background: url("../images/good10.jpg"); }
+
+.ulimg11 {
+  background: url("../images/good11.jpg"); }
+
+.ulimg12 {
+  background: url("../images/good12.jpg"); }
+
+.ulimg13 {
+  background: url("../images/good13.jpg"); }
+
+.ulimg14 {
+  background: url("../images/good14.jpg"); }
+
+.ulimg15 {
+  background: url("../images/good15.jpg"); }
+
+.ulimg16 {
+  background: url("../images/good16.jpg"); }

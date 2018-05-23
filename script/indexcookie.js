@@ -64,7 +64,7 @@ define(["jquery","jquerycookie"],function(){
         var target = event.target || event.srcElement;
         var goodsid = $(target).attr("data_id");
         $.cookie("shopcar", goodsid);
-        window.location.href = "http://localhost/juanpi/gooddetail.html";
+           window.location.href = "http://localhost/juanpi2/gooddetail.html";
       }, 
     
       getnum() {

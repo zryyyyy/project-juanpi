@@ -1,14 +1,14 @@
 
 /*轮播图*/
-.wrap{width: 1351px;height: 380px;background:#f7f7f7;}
-.wrap .wrap_banner{width: 1200px;height: 380px;margin: 0 auto;overflow: hidden;}
+.wrap{height: 380px;background:#f7f7f7;}
+.wrap .wrap_banner{width: 1200px;height: 380px;margin: 0 auto;overflow: hidden;position: relative;}
 .wrap .wrap_banner .round{z-index: 9999; position: absolute;top: 508px;width: 200px;height:18.5px;right: 50%;margin-right: -100px;}
 .wrap .wrap_banner .round .adtap{text-align: center;}
 .wrap .wrap_banner .round .adtap a{background: #fff;border-radius: 10px;cursor: pointer;display: inline-block;height: 10px;margin-right: 7px;width: 10px;overflow: hidden;vertical-align: middle;}
 .wrap .wrap_banner .round .adtap a.current{background: transparent;border: 3px solid #fff;z-index: 9999;}
-.wrap .wrap_banner .banner_arrow .arrow_prev{left: 306px;}
-.wrap .wrap_banner .banner_arrow .arrow_next{left: 976px;}
-.wrap .wrap_banner .banner_arrow .arrow_prev,.wrap .wrap_banner .banner_arrow .arrow_next{background-color: rgba(0,0,0,0.2);color: #fff;display: block;height: 45px;line-height: 45px;overflow: hidden;position: absolute;top: 330px;width: 29px;z-index: 12;}
+.wrap .wrap_banner .banner_arrow .arrow_prev{left: 231px;}
+.wrap .wrap_banner .banner_arrow .arrow_next{left: 901px;}
+.wrap .wrap_banner .banner_arrow .arrow_prev,.wrap .wrap_banner .banner_arrow .arrow_next{background-color: rgba(0,0,0,0.2);color: #fff;display: block;height: 45px;line-height: 45px;overflow: hidden;position: absolute;top: 188px;width: 29px;z-index: 12;}
 .banner_arrow .arrow_prev i, .banner_arrow .arrow_next i{background:url(../images/arrow.png) no-repeat;cursor: pointer;display: block;height: 21px;margin: 12px 0 0 9px;overflow: hidden;width: 13px;}
 .banner_arrow .arrow_prev i{background-position: top left;}
 .banner_arrow .arrow_next i{background-position: top right;}
@@ -38,7 +38,7 @@
 .wrap .wrap_banner .banner_left dl .ct_icon_neiyi{background-position: -288px 0;}
 .wrap .wrap_banner .banner_left dl .ct_icon_peishi{background-position: -312px 0;}
 .wrap .wrap_banner .banner_left dl .border_none{background:none;}
-.wrap .wrap_banner .banner_right{width: 250px;height: 360px;background: #f7f7f7;;box-shadow: none;position: absolute;right: 71px;top: 175px;}
+.wrap .wrap_banner .banner_right{width: 250px;height: 360px;background: #f7f7f7;;box-shadow: none;position: absolute;right: 6px;top: 20px;}
 .wrap .wrap_banner .banner_right dl{width: 251px;height: 360px;overflow: hidden;background-color: #e2e2e2;}
 .wrap .wrap_banner .banner_right dl dd{float:left;display: inline;width: 124.5px;height: 119px;overflow: hidden;text-align: center;background-color: #fff;margin:  0 1px 1px 0;};
 .wrap .wrap_banner .banner_right dl dd img{width: 124px;max-height: 119px;}
